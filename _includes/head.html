@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ site.name }} | {{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+
+  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
+  <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
+  <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_te77i6a5a5xywrk9.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/social-share.js/1.0.15/css/share.min.css">
+  <script type="text/javascript" src="//cdn.bootcss.com/social-share.js/1.0.15/js/social-share.min.js"></script>
+  {% if site.blog_theme == "light" %}
+    {% stylesheet light %}
+  {% else %}
+    {% stylesheet dark %}
+  {% endif %}
+</head>

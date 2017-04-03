@@ -1,0 +1,16 @@
+// =============================================================================
+// Footer
+// =============================================================================
+
+.footer {
+	font-size: .9em;
+    line-height: 2.2;
+    padding: 15px 70px 15px 40px;
+    text-align: center;
+    width: auto;
+}
+@include breakpoint(small) {
+  .footer {
+    padding:35px 0 85px;;
+  }
+}
